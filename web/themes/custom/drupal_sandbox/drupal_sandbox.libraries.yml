@@ -1,0 +1,14 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      css/base/fonts.css: {}
+      css/base/variables.css: {}
+      css/base/base.css: {}
+    layout:
+      css/layout/layout.css: {}
+    component:
+      css/components/buttons.css: {}
+      css/components/tabs.css: {}
+      css/components/site-header.css: {}
+      css/components/header-navigation.css: {}

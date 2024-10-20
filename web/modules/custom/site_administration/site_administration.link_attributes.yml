@@ -1,0 +1,8 @@
+button_type:
+  title: Button type
+  type: select
+  empty_value: ''
+  options:
+    primary: Primary
+    secondary: Secondary
+    link: Link

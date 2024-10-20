@@ -1,0 +1,130 @@
+/*
+  Global CSS custom properties.
+*/
+:root {
+  --font-base: "SourceSansPro", sans-serif;
+  /* Typography helpers. */
+  --font-size-base: 1.125rem;
+  --font-size-m: 1rem;
+  --font-size-s: 0.875rem;
+  --font-size-xs: 0.8125rem;
+  --font-size-xxs: 0.75rem;
+  --line-height-base: 1.6875rem;
+  --line-height-s: 1.125rem;
+  /* Layout helpers. */
+  --max-width: 80.6875rem;
+  --sp: 18px;
+  /**
+   * Named Colors.
+   */
+  --color--navy-blue: #112235;
+  --color--white: #fff;
+  --color--purple: #4A49A3;
+  --color--light-green: #D1F960;
+  /* Border radius */
+  --border-radius: 0.313rem;
+  /* Layout helpers */
+  --sp0: calc(0 * var(--sp));
+  --sp0-25: calc(0.25 * var(--sp));
+  --sp0-5: calc(0.5 * var(--sp));
+  --sp0-75: calc(0.75 * var(--sp));
+  --sp1: calc(1 * var(--sp));
+  --sp1-25: calc(1.25 * var(--sp));
+  --sp1-5: calc(1.5 * var(--sp));
+  --sp1-75: calc(1.75 * var(--sp));
+  --sp2: calc(2 * var(--sp));
+  --sp2-25: calc(2.25 * var(--sp));
+  --sp2-5: calc(2.5 * var(--sp));
+  --sp2-75: calc(2.75 * var(--sp));
+  --sp3: calc(3 * var(--sp));
+  --sp3-25: calc(3.25 * var(--sp));
+  --sp3-5: calc(3.5 * var(--sp));
+  --sp3-75: calc(3.75 * var(--sp));
+  --sp4: calc(4 * var(--sp));
+  --sp4-25: calc(4.25 * var(--sp));
+  --sp4-5: calc(4.5 * var(--sp));
+  --sp4-75: calc(4.75 * var(--sp));
+  --sp5: calc(5 * var(--sp));
+  --sp5-25: calc(5.25 * var(--sp));
+  --sp5-5: calc(5.5 * var(--sp));
+  --sp5-75: calc(5.75 * var(--sp));
+  --sp6: calc(6 * var(--sp));
+  --sp6-25: calc(6.25 * var(--sp));
+  --sp6-5: calc(6.5 * var(--sp));
+  --sp6-75: calc(6.75 * var(--sp));
+  --sp7: calc(7 * var(--sp));
+  --sp7-25: calc(7.25 * var(--sp));
+  --sp7-5: calc(7.5 * var(--sp));
+  --sp7-75: calc(7.75 * var(--sp));
+  --sp8: calc(8 * var(--sp));
+  --sp8-25: calc(8.25 * var(--sp));
+  --sp8-5: calc(8.5 * var(--sp));
+  --sp8-75: calc(8.75 * var(--sp));
+  --sp9: calc(9 * var(--sp));
+  --sp9-25: calc(9.25 * var(--sp));
+  --sp9-5: calc(9.5 * var(--sp));
+  --sp9-75: calc(9.75 * var(--sp));
+  --sp10: calc(10 * var(--sp));
+  --sp10-25: calc(10.25 * var(--sp));
+  --sp10-5: calc(10.5 * var(--sp));
+  --sp10-75: calc(10.75 * var(--sp));
+  --sp11: calc(11 * var(--sp));
+  --sp11-25: calc(11.25 * var(--sp));
+  --sp11-5: calc(11.5 * var(--sp));
+  --sp11-75: calc(11.75 * var(--sp));
+  --sp12: calc(12 * var(--sp));
+  --sp12-25: calc(12.25 * var(--sp));
+  --sp12-5: calc(12.5 * var(--sp));
+  --sp12-75: calc(12.75 * var(--sp));
+  --sp13: calc(13 * var(--sp));
+  --sp13-25: calc(13.25 * var(--sp));
+  --sp13-5: calc(13.5 * var(--sp));
+  --sp13-75: calc(13.75 * var(--sp));
+  --sp14: calc(14 * var(--sp));
+  --sp14-25: calc(14.25 * var(--sp));
+  --sp14-5: calc(14.5 * var(--sp));
+  --sp14-75: calc(14.75 * var(--sp));
+  --sp15: calc(15 * var(--sp));
+  --sp15-25: calc(15.25 * var(--sp));
+  --sp15-5: calc(15.5 * var(--sp));
+  --sp15-75: calc(15.75 * var(--sp));
+  --sp16: calc(16 * var(--sp));
+  --sp16-25: calc(16.25 * var(--sp));
+  --sp16-5: calc(16.5 * var(--sp));
+  --sp16-75: calc(16.75 * var(--sp));
+  --sp17: calc(17 * var(--sp));
+  --sp17-25: calc(17.25 * var(--sp));
+  --sp17-5: calc(17.5 * var(--sp));
+  --sp17-75: calc(17.75 * var(--sp));
+  --sp18: calc(18 * var(--sp));
+  --sp18-25: calc(18.25 * var(--sp));
+  --sp18-5: calc(18.5 * var(--sp));
+  --sp18-75: calc(18.75 * var(--sp));
+  --sp19: calc(19 * var(--sp));
+  --sp19-25: calc(19.25 * var(--sp));
+  --sp19-5: calc(19.5 * var(--sp));
+  --sp19-75: calc(19.75 * var(--sp));
+  --sp20: calc(20 * var(--sp));
+  --sp20-25: calc(20.25 * var(--sp));
+  --sp20-5: calc(20.5 * var(--sp));
+  --sp20-75: calc(20.75 * var(--sp));
+  --sp21: calc(21 * var(--sp));
+  --sp21-25: calc(21.25 * var(--sp));
+  --sp21-5: calc(21.5 * var(--sp));
+  --sp21-75: calc(21.75 * var(--sp));
+  --sp22: calc(22 * var(--sp));
+  --sp22-25: calc(22.25 * var(--sp));
+  --sp22-5: calc(22.5 * var(--sp));
+  --sp22-75: calc(22.75 * var(--sp));
+  --sp23: calc(23 * var(--sp));
+  --sp23-25: calc(23.25 * var(--sp));
+  --sp23-5: calc(23.5 * var(--sp));
+  --sp23-75: calc(23.75 * var(--sp));
+  --sp24: calc(24 * var(--sp));
+  --sp24-25: calc(24.25 * var(--sp));
+  --sp24-5: calc(24.5 * var(--sp));
+  --sp24-75: calc(24.75 * var(--sp));
+  --sp25: calc(25 * var(--sp));
+}
+
+/*# sourceMappingURL=variables.css.map */

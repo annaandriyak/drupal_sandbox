@@ -1,0 +1,25 @@
+uuid: d0596400-d210-468c-8de7-c31be17b5494
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - drupal_sandbox
+id: drupal_sandbox_main_navigation
+theme: drupal_sandbox
+region: header
+weight: -1
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

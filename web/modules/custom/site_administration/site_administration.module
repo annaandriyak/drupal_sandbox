@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Code for the Site Administration project.
+ */
+
+function site_administration_link_alter(&$variables) {
+  $classes = $variables['options']['attributes']['class'] ?? [];
+  $button = $variables['options']['attributes']['button_type'] ?? NULL;
+
+  if ($button) {
+    unset($variables['options']['attributes']['button_type']);
+
+    $classes = [...$classes, 'button', 'button--' . $button];
+    $variables['options']['attributes']['class'] = array_unique($classes);
+  }
+}

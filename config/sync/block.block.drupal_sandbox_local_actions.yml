@@ -1,0 +1,20 @@
+uuid: 70f8cd77-cdb2-4d58-acb9-758c4116c610
+langcode: en
+status: false
+dependencies:
+  theme:
+    - drupal_sandbox
+_core:
+  default_config_hash: ABoKnlk20KHqZRw_2Qr4EvaFvH4lnQ2nuhunHeE1JIU
+id: drupal_sandbox_local_actions
+theme: drupal_sandbox
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

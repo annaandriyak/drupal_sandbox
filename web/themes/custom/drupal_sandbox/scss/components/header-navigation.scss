@@ -1,0 +1,61 @@
+/**
+ * @file
+ * Header navigation.
+ */
+
+.region--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  .menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 32px;
+    list-style: none;
+
+    .menu-item {
+      position: relative;
+      display: flex;
+      align-content: center;
+    }
+
+    .menu-link {
+      line-height: 1.575rem;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    .button-toggle {
+      width: 24px;
+      height: 24px;
+      border: 0;
+      background: url("../../assets/images/icons/chevron-down.svg") 50% 50% no-repeat;
+    }
+
+    .menu {
+      display: none;
+      position: absolute;
+      top: calc(100% + 1.375rem);
+      left: 0;
+      padding: var(--sp);
+      background: var(--color--white);
+      min-width: 150px;
+      border-radius: var(--border-radius);
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+    .is-active-menu-parent {
+      display: block;
+    }
+  }
+}

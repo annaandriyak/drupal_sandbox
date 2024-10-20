@@ -1,0 +1,21 @@
+uuid: dde7a828-1684-42ba-8ec9-8a0ecb7b5584
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.section__hero
+    - field.storage.block_content.field_title_tag
+  module:
+    - options
+id: block_content.section__hero.field_title_tag
+field_name: field_title_tag
+entity_type: block_content
+bundle: section__hero
+label: 'Heading tag'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

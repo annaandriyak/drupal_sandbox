@@ -1,0 +1,44 @@
+_core:
+  default_config_hash: 4GIX5Esnc_umpXUBj4IIocRX7Mt5fPhm4AgXfE3E56E
+module:
+  block: 0
+  block_content: 0
+  breakpoint: 0
+  contextual: 0
+  dblog: 0
+  dynamic_page_cache: 0
+  field: 0
+  field_ui: 0
+  file: 0
+  filter: 0
+  image: 0
+  layout_builder: 0
+  layout_builder_modal: 0
+  layout_builder_restrictions: 0
+  layout_discovery: 0
+  link: 0
+  link_attributes: 0
+  link_attributes_menu_link_content: 0
+  media: 0
+  media_library: 0
+  menu_link_content: 0
+  menu_ui: 0
+  mysql: 0
+  node: 0
+  options: 0
+  page_cache: 0
+  path_alias: 0
+  site_administration: 0
+  system: 0
+  text: 0
+  toolbar: 0
+  twig_field_value: 0
+  twig_tweak: 0
+  user: 0
+  views: 10
+  minimal: 1000
+theme:
+  claro: 0
+  gin: 0
+  drupal_sandbox: 0
+profile: minimal

@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Base Fonts.
+ */
+@font-face {
+  font-family: SourceSansPro;
+  src: url("../../assets/fonts/SourceSansPro-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: PlayfairDisplay;
+  src: url("../../assets/fonts/PlayfairDisplay-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

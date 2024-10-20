@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * Implements hook_preprocess_HOOK() for menu-local-task templates.
+ */
+function drupal_sandbox_preprocess_menu_local_task(&$variables) {
+  $variables['link']['#options']['attributes']['class'][] = 'tabs__link';
+  $variables['link']['#options']['attributes']['class'][] = 'js-tabs-link';
+
+  // Ensure is-active class is set when the tab is active. The generic active
+  // link handler applies stricter comparison rules than what is necessary for
+  // tabs.
+  if (isset($variables['is_active']) && $variables['is_active'] === TRUE) {
+    $variables['link']['#options']['attributes']['class'][] = 'is-active';
+  }
+
+  if (isset($variables['element']['#level'])) {
+    $variables['level'] = $variables['element']['#level'];
+  }
+}
+
+function drupal_sandbox_preprocess_block(&$variables, $hook) {
+  $entity = $variables['content']['#block_content'] ?? [];
+
+  if ($entity) {
+    $function = __FUNCTION__ . '__bundle__' . $entity->bundle();
+    if (function_exists($function)) {
+      $function($variables, $hook);
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_block__bundle__banner_block().
+ */
+function drupal_sandbox_preprocess_block__bundle__section__hero(&$variables) {
+  $entity = $variables['content']['#block_content'];
+  $variables['title_tag'] = $entity->get('field_title_tag')->getString();
+}

@@ -1,0 +1,22 @@
+uuid: c64edb9b-2b81-4198-8f68-e79aa1c99c7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.section__hero
+    - field.storage.block_content.field_description
+  module:
+    - text
+id: block_content.section__hero.field_description
+field_name: field_description
+entity_type: block_content
+bundle: section__hero
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

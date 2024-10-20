@@ -1,0 +1,19 @@
+name: Drupal Sandbox
+type: theme
+description: 'Drupal Sandbox theme.'
+core_version_requirement: ^10.0 || ^11.0
+base theme: false
+
+libraries:
+  - drupal_sandbox/global-styling
+regions:
+  header: Header
+  hero: Hero (full width)
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  content_above: Content Above
+  content: Content
+  content_below: Content Below
+  sidebar: Sidebar
+  footer_top: Footer Top
+  footer_bottom: Footer Bottom

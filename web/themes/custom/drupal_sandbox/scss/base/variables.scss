@@ -1,0 +1,42 @@
+/*
+  Global CSS custom properties.
+*/
+
+@import "../helpers/functions";
+
+:root {
+  --font-base: "SourceSansPro", sans-serif;
+
+  /* Typography helpers. */
+  --font-size-base: 1.125rem;
+  --font-size-m: 1rem;
+  --font-size-s: 0.875rem;
+  --font-size-xs: 0.8125rem;
+  --font-size-xxs: 0.75rem;
+  --line-height-base: 1.6875rem;
+  --line-height-s: 1.125rem;
+
+  /* Layout helpers. */
+  --max-width: 80.6875rem;
+
+  --sp: 18px;
+
+  /**
+   * Named Colors.
+   */
+  --color--navy-blue: #112235;
+  --color--white: #fff;
+  --color--purple: #4A49A3;
+  --color--light-green: #D1F960;
+
+  /* Border radius */
+  --border-radius: 0.313rem;
+
+  /* Layout helpers */
+
+  @for $i from 0 through 100 {
+    $i: calc($i / 4);
+    $key: str-replace(#{$i}, '.', '-');
+    --sp#{$key}: calc(#{$i} * var(--sp));
+  }
+}

@@ -1,0 +1,11 @@
+name: Site Administration
+description: 'Site administration for site and content management'
+package: Site Platform
+
+type: module
+core_version_requirement: ^10 | ^11
+
+dependencies:
+  - link_attributes:link_attributes
+
+version: 2.2.0

@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: HlN7eAN2N4JIHsYv56V4E7sqC9bS609KwvGFjyD_mgk
+langcode: en
+uuid: eefe75c9-2380-4d93-867c-79d562d93b00
+name: 'Drupal sandbox'
+mail: drupal.sandbox@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/2
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

@@ -1,0 +1,94 @@
+uuid: 068d1c66-b5f9-4b73-95f4-b581a249cc9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.basic_page.body
+    - node.type.basic_page
+  module:
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          fff83ab6-2932-4553-bb59-e41cd0f4ee1e:
+            uuid: fff83ab6-2932-4553-bb59-e41cd0f4ee1e
+            region: content
+            configuration:
+              id: 'extra_field_block:node:basic_page:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          57297aa0-a404-4a16-8df8-7b11092d5dd1:
+            uuid: 57297aa0-a404-4a16-8df8-7b11092d5dd1
+            region: content
+            configuration:
+              id: 'field_block:node:basic_page:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+  layout_builder_restrictions:
+    allowed_block_categories:
+      - 'Content fields'
+      - 'Custom block types'
+      - Forms
+      - 'Inline blocks'
+      - 'Lists (Views)'
+      - Menus
+      - System
+      - User
+      - core
+    entity_view_mode_restriction:
+      allowed_layouts: {  }
+      denylisted_blocks: {  }
+      allowlisted_blocks:
+        'Custom block types':
+          - section__hero
+        'Inline blocks':
+          - 'inline_block:section__hero'
+      restricted_categories:
+        - 'Content fields'
+        - Forms
+        - 'Lists (Views)'
+        - Menus
+        - System
+        - User
+        - core
+id: node.basic_page.default
+targetEntityType: node
+bundle: basic_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
