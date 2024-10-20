@@ -3,10 +3,10 @@ To set up the project, follow the steps below:
 1. Install DDEV on your machine. You can find the installation instructions [here](https://ddev.readthedocs.io/en/stable/#installation).
 2. Clone the project repository to your local machine.
 3. Navigate to the project directory and run the following command to start the project: ```ddev start```
-4. Run the following command to import the database: ```ddev import-db --src=./dbs/dump-empaths.sql.gz```
+4. Run the following command to import the database: ```ddev import-db --src=dbs/dump.sql.gz```
 5. Run the following command to import configuration: ```ddev deploy -y```
-6. You can start working on the project by visiting the URL: ```https://drupal-sandbox.ddev.site```
-7. You can access the admin panel by visiting the URL: ```https://drupal-sandbox.ddev.site/user/login``` ```username: admin``` ```password: admin```
+6. You can start working on the project by visiting the URL: ```http://drupal-sandbox.ddev.site```
+7. You can access the admin panel by visiting the URL: ```http://drupal-sandbox.ddev.site/user/login``` ```username: admin``` ```password: admin```
 
 ## DDEV commands
 Here are some useful DDEV commands that you can use to manage the project:
