@@ -3,10 +3,12 @@ To set up the project, follow the steps below:
 1. Install DDEV on your machine. You can find the installation instructions [here](https://ddev.readthedocs.io/en/stable/#installation).
 2. Clone the project repository to your local machine.
 3. Navigate to the project directory and run the following command to start the project: ```ddev start```
-4. Run the following command to import the database: ```ddev import-db --src=dbs/dump.sql.gz```
-5. Run the following command to import configuration: ```ddev deploy -y```
-6. You can start working on the project by visiting the URL: ```http://drupal-sandbox.ddev.site```
-7. You can access the admin panel by visiting the URL: ```http://drupal-sandbox.ddev.site/user/login``` ```username: admin``` ```password: admin```
+4. Run the following command to install Drupal core & extensions: ```ddev composer i```
+5. Navigate to the ```sites/default```, open the ```settings.php``` and at the end of the file put the line ```$settings['config_sync_directory'] = '../config/sync';```
+5. Run the following command to import the database: ```ddev import-db --src=dbs/dump.sql.gz```
+6. Run the following command to import configuration: ```ddev deploy -y```
+7. You can start working on the project by visiting the URL: ```http://drupal-sandbox.ddev.site```
+8. You can access the admin panel by visiting the URL: ```http://drupal-sandbox.ddev.site/user/login``` ```username: admin``` ```password: admin```
 
 ## DDEV commands
 Here are some useful DDEV commands that you can use to manage the project:
